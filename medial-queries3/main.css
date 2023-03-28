@@ -1,3 +1,94 @@
 body {
   background: peachpuff;
+  text-align: center;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  margin: 1rem;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.a, .b, .c, .d, .e, .f, .g, .h {
+  background-color: rgb(216,216,216);
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.inner-top-container {
+  display: flex;
+  gap: 30px;
+  
+}
+
+.inner-bottom-container {
+  display: flex;
+  gap: 30px;
+}
+
+.a {
+  display: flex;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.b, .c, .d, .e, .f, .g {
+  display: flex;
+  flex: 1;
+}
+
+.h {
+  display: flex;
+  flex-basis: 100%;
+  flex: 2;
+}
+
+@media (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .a {
+    flex-basis: 100%;
+  
+  }
+
+  .inner-container {
+    flex-basis: 70%;
+    flex: 3;
+  }
+
+  .inner-top-container {
+    flex-basis: 47%;
+  }
+
+  .inner-bottom-container {
+    flex-basis: 46%;
+  }
+
+  .h {
+    flex-basis: 20%;
+    flex: 1;
+  }
+
 }

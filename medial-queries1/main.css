@@ -1,3 +1,56 @@
+/* * {
+  border: 1px solid red;
+} */
+
 body {
-  background: blanchedalmond;
+  background: rgb(243, 212, 166);
+  text-align: center;
+  margin: 0;
 }
+
+.container {
+  margin: 1rem;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.a, .b, .c {
+  background-color: rgb(216,216,216);
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+
+.a {
+  flex: 1;
+}
+
+.b {
+  min-height: 60vh;
+  flex: 2;
+}
+
+.c {
+  flex: 1;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+  .a {
+    flex-basis: 100%;
+  }
+  .b {
+   flex: 3;
+  }
+  .c {
+    flex: 1;
+  }
+} 
